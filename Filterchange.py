@@ -3,10 +3,10 @@ drive.mount('/content/drive')
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-file_path = '/content/drive/MyDrive/cv/image.jpg'
+from google.colab.patches import cv2_imshow
 
 # Load a color image
-image = cv2.imread('passport size photo.jpg')
+image = cv2.imread('/content/drive/MyDrive/cv/image.jpg')
 
 # Check if the image was loaded successfully
 if image is None:
